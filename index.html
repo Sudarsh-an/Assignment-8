@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-8</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <h1>Register a new Student</h1>
+        <form id="registration">
+          <div>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required >
+            <span class="error" id="firstNameError"></span>
+          </div>
+          <div>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required>
+            <span class="error" id="lastNameError"></span>
+          </div>
+          <div>
+            <label for="dateOfBirth">Date of Birth:</label>
+            <input type="date" id="dateOfBirth" required>
+            <span class="error" id="dateOfBirthError"></span>
+          </div>
+          <div>
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male" required> Male
+            <input type="radio" name="gender" value="female" required> Female
+            <span class="error" id="genderError"></span>
+          </div>
+          <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <span class="error" id="passwordError"></span>
+          </div>
+          <div>
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" required>
+            <span class="error" id="confirmPasswordError"></span>
+          </div>
+          <div>
+            <button type="submit" id="submitButton" class="register-button">Register</button>
+          </div>
+        </form>
+    </div>
+
+
+
+    <script src="./main.js"> </script>
+</body>
+</html>
